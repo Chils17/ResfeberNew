@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.VehicleDetailActivity">
+
+    <include layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_196dp"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/ic_launcher" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:layout_gravity="center"
+                    android:theme="@style/BlueAccent"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                card_view:cardCornerRadius="@dimen/dimen_4dp"
+                card_view:contentPadding="@dimen/dimen_4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Vehicle Name :"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="regular" />
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:id="@+id/txtVehicleName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Name"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llVehicleType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Vehicle Type :"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="regular" />
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:id="@+id/txtVehicleType"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Name"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llVehicleNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Vehicle Number :"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="regular" />
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:id="@+id/txtVehicleNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Name"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llVehicleSeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Vehicle No of Seat :"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="regular" />
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:id="@+id/txtVehicleNoOfSeat"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Name"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llVehicleFacility"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Vehicle Facility :"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="regular" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edt_border"
+                            android:minHeight="@dimen/dimen_28dp"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/spinFacility"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:minHeight="@dimen/dimen_28dp"
+                                android:spinnerMode="dropdown"
+                                android:textSize="@dimen/sp16" />
+
+                        </LinearLayout>
+
+                        <!--<Spinner
+                            android:visibility="gone"
+                            android:id="@+id/spinFacility"
+                            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/sp16" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llPricePerKm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Price per Km :"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="regular" />
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:id="@+id/txtVehiclePricePerKm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Name"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDriver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Driver Name :"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="regular" />
+
+                        <com.travel.resfeber.custom.TfTextView
+                            android:id="@+id/txtDriverName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dimen_2dp"
+                            android:text="Name"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16"
+                            app:ftype="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:visibility="gone"
+                 android:orientation="horizontal">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:orientation="vertical">
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Vehicle Name :"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="regular" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Vehicle Type :"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="regular" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Vehicle Number :"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="regular" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Vehicle No of seat :"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="regular" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Vehicle Facility :"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="regular" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Price per km :"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="regular" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Driver Name :"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="regular" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:orientation="vertical">
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:id="@+id/txtVehicleName"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Name"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="bold" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:id="@+id/txtVehicleType"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Name"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="bold" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:id="@+id/txtVehicleNumber"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Name"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="bold" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:id="@+id/txtVehicleNoOfSeat"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Name"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="bold" />
+
+                     &lt;!&ndash;<com.travel.resfeber.custom.TfTextView
+                         android:id="@+id/txtVehicleFacility"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Name"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="bold" />&ndash;&gt;
+
+                     <Spinner
+                         android:id="@+id/spinFacility"
+                         style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:textColor="@color/colorBlack"
+                         android:textColorHint="@color/black"
+                         android:textSize="@dimen/sp16" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:id="@+id/txtVehiclePricePerKm"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Name"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="bold" />
+
+                     <com.travel.resfeber.custom.TfTextView
+                         android:id="@+id/txtDriverName"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:text="Name"
+                         android:textColor="@android:color/black"
+                         android:textSize="@dimen/sp16"
+                         app:ftype="bold" />
+
+                 </LinearLayout>
+
+
+             </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="Total Amount :"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp18"
+                    app:ftype="bold" />
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtTotalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="Amount"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp18"
+                    app:ftype="regular" />
+
+            </LinearLayout>
+
+
+            <com.travel.resfeber.custom.TfButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

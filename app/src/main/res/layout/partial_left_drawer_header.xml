@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <FrameLayout
+        android:id="@+id/framePartialProfileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <LinearLayout
+            android:id="@+id/llHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="@dimen/height_70"
+                android:layout_height="@dimen/height_70"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp"
+                app:civ_fill_color="#d5d5d5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_2dp"
+                    android:text="Abc"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="medium" />
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_2dp"
+                    android:text="abc@gmail.com"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp14"
+                    app:ftype="medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

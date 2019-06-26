@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgVehicle"
+                    android:layout_width="@dimen/dimen_72dp"
+                    android:adjustViewBounds="true"
+                    android:layout_height="@dimen/dimen_72dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:layout_gravity="center"
+                    android:theme="@style/BlueAccent"
+                    android:visibility="visible" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_4dp">
+
+            <com.travel.resfeber.custom.TfTextView
+                android:id="@+id/txtVehicleName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dimen_2dp"
+                android:text="Name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp16"
+                app:ftype="bold" />
+
+            <com.travel.resfeber.custom.TfTextView
+                android:id="@+id/txtVehicleSeat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dimen_2dp"
+                android:text="Seat"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp16"
+                app:ftype="regular" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorLightGrey"
+        android:layout_height="@dimen/dimen_1dp"/>
+
+</LinearLayout>

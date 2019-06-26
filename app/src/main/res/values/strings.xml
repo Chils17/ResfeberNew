@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">Resfeber</string>
+
+    ***************************hint******************
+    <string name="hint_enter_email">Enter Email Address</string>
+    <string name="hint_enter_password">Enter Password</string>
+    <string name="verify">Verify OTP</string>
+    <string name="otp_number">OTP</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="don_t_have_an_account">Don\'t have an Account?</string>
+    <string name="don_t_receive_the_verification">Don\'t receive the OTP?</string>
+    <string name="resend_code">Resend OTP</string>
+    <string name="login_not_successful">Login failed!</string>
+    <string name="no_data_available">No data is available!</string>
+    <string name="update">Update</string>
+    <string name="save">Save</string>
+    <string name="change_password">Change Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="user_profile">User Profile</string>
+    <string name="change_password_success">Password changes successfully!</string>
+    <string name="change_password_unsuccess">Password change failed!</string>
+    <string name="login_out">Log Out</string>
+    <string name="user">User</string>
+    <string name="description">Description</string>
+    <string name="submit">Submit</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_success">Feedback submitted successfully</string>
+    <string name="feedback_not_success">Feedback submission failed!</string>
+    <string name="email_verify_success">Email Verified successfully!</string>
+    <string name="email_verify_not_success">Email Verification failed!</string>
+    <string name="search">Search</string>
+    <string name="setting">Settings</string>
+    <string name="edit_user_profile">Edit</string>
+    <string name="modify_user_profile">Modify User Profile</string>
+    <string name="reset_password_text">Please enter your email address. You will then receive an otp to reset your password.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="ok">OK</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="kadji_care">Kadji Care</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">Full Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="dialog_logout">Are you sure you want to logout ?</string>
+
+    <string name="left_drawer_patient">Patient</string>
+    <string name="left_drawer_leads">Leads</string>
+    <string name="left_drawer_settings">Settings</string>
+    <string name="reset">Reset</string>
+
+    <string name="click_back_to_exit">click back to exit</string>
+
+    <string name="err_something_went_wrong">Something went wrong,please try again later.</string>
+    <string name="err_enter_email">Please enter email address.</string>
+    <string name="err_enter_birth_date">Please, enter birthdate</string>
+    <string name="err_enter_password">Please enter password.</string>
+    <string name="err_enter_old_password">Please enter old password.</string>
+    <string name="err_password_validation">Password should be minimum 6 characters.</string>
+    <string name="err_enter_valid_email_address">Please enter valid email address.</string>
+    <string name="err_please_enter_shipping_address">Please enter shipping adresss.</string>
+    <string name="err_please_enter_billing_address">Please enter billing adresss.</string>
+    <string name="err_no_internet_connection">No internet connection.</string>
+    <string name="err_registration_failed">Registration Failed.</string>
+    <string name="err_enter_fisrst_name">Please enter firstname.</string>
+    <string name="err_enter_middle_name">Please enter middlename.</string>
+    <string name="err_enter_last_name">Please enter lastname.</string>
+    <string name="err_enter_mobile">Please enter mobile number.</string>
+    <string name="err_enter_valid_mobile">Please enter valid mobile number.</string>
+    <string name="err_enter_confirm_password">Please enter confirm password.</string>
+    <string name="err_enter_new_password">Please enter new password.</string>
+    <string name="err_not_match_password_confirm_password">Password and confirm password not match.</string>
+    <string name="err_not_match_password_new_confirm_password">New password and confirm password not match.</string>
+    <string name="err_enter_address_first">Please enter Address1.</string>
+    <string name="err_enter_address_second">Please enter Address2.</string>
+    <string name="err_select_country">Please select country.</string>
+    <string name="err_select_state">Please select state.</string>
+    <string name="err_select_city">Please select city.</string>
+    <string name="err_enter_zipcode">Please enter zipcode.</string>
+    <string name="err_enter_referral_code">Please enter referralcode.</string>
+    <string name="err_enter_review_title">Please enter title.</string>
+    <string name="err_enter_review_description">Please enter description.</string>
+    <string name="err_enter_review_rating">Please give the rating.</string>
+    <string name="err_select_membership_plan">Please select atleast one membership plan..</string>
+    <string name="err_not_defined">Not defined</string>
+    <string name="err_on_permission_denied">If you reject permission,you can not use this servicePlease turn on permissions at [Setting] > [Permission]</string>
+    <string name="mobile">Mobile</string>
+    <string name="dob">BirthDate</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="vehicle_booking">Vehicle Booking</string>
+    <string name="event_booking">Event Booking</string>
+    <string name="view_order">View Order</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="select_source">Select Source</string>
+    <string name="select_destination">Select Destination</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="vehicle_name">Vehicle Name</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="no_seats">No of Seats</string>
+    <string name="vehicle_facility">Vehicle Facility</string>
+    <string name="price">Price per Km</string>
+    <string name="driver_name">Driver Name</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="pay_now">Pay Now</string>
+
+    <string name="enter_mobile_number">Please enter your valid mobile number</string>
+    <string name="enter_fullname">Please enter your full name</string>
+    <string name="yes">YES</string>
+    <string name="profile_update">Profile successfully updated</string>
+    <string name="gender">Gender</string>
+    <string name="medical_issue">Medical Issue</string>
+    <string name="preferences">Preferences</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="name">Name</string>
+    <string name="pick_up_time">Pickup Time</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="err_enter_feedback">Please enter your feedback</string>
+    <string name="help">Help</string>
+
+
+</resources>

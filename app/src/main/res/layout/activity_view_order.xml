@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.ViewOrderActivity">
+
+    <include layout="@layout/app_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvOrderVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:padding="5dp"
+            android:scrollbars="none" />
+
+        <com.travel.resfeber.custom.TfTextView
+            android:id="@+id/txtAlert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/no_data_available"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp16"
+            android:visibility="gone"
+            app:ftype="regular" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

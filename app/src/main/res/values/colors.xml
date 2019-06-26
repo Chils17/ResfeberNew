@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1FB8FF</color>
+    <color name="colorPrimaryDark">#1FB8FF</color>
+    <color name="colorAccent">#00B49A</color>
+
+    <color name="color1">#EF8F1C</color>
+    <color name="color2">#2978D9</color>
+    <color name="color3">#00B49A</color>
+    <color name="color4">#43A047</color>
+    <color name="new_green">#71a30a</color>
+
+    <color name="strip1">#844AE7</color>
+    <color name="strip2">#FF9338</color>
+    <color name="strip3">#42A5EF</color>
+    <color name="strip4">#FF4141</color>
+    <color name="strip5">#5A29A4</color>
+
+    <color name="white">#ffffff</color>
+    <color name="off_white">#eeeeee</color>
+    <color name="black">#000000</color>
+    <color name="half_black">#5d5d5d</color>
+    <color name="half_black_light">#5e5e5e</color>
+    <color name="half_black_checkout">#2a2a2a</color>
+
+
+    <color name="space_black">#8e8e8e</color>
+    <color name="yellow">#fbc02d</color>
+
+    <color name="button_bg">#212121</color>
+
+    <color name="colorWhiteSmoke">#F7F7F7</color>
+    <color name="colorGrey">#616161</color>
+    <color name="colorCloud">#1FB8FF</color>
+    <color name="colorLightGrey">#eeeeee</color>
+    <color name="colorPurple">#d500f9</color>
+    <color name="colorOrange">#ff6d00</color>
+    <color name="colorRed">#F5511E</color>
+    <color name="red">#E92F38</color>
+    <color name="colorGreen">#7AB439</color>
+    <color name="colorBlack">#00000000</color>
+    <color name="colorDarkRed">#A5302A</color>
+
+    <color name="colorLightGreen">#00D498</color>
+    <color name="colorLGreen">#00D498</color>
+
+    <color name="colorBlue">#385AD8</color>
+    <color name="colorLightBlue">#7769FF</color>
+    <color name="color_transparent">@android:color/transparent</color>
+    <color name="colorYellow">#FFBF25</color>
+    <color name="colorDarkYellow">#EE9367</color>
+    <color name="colorFB">#3B5997</color>
+    <color name="colorTW">#00ACEE</color>
+
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent_light">#88FFFFFF</color>
+    <color name="alpha_black_50">#50000000</color>
+    <color name="menu_text_color">#00BFFF</color>
+    <color name="light_blue">#3279AD</color>
+    <color name="drawer_bg">#aaaaaa</color>
+    <color name="dark_blue">#24489E</color>
+    <color name="fragment_bg">@android:color/white</color>
+    <color name="shadow_color">#20000000</color>
+    <color name="dashbord_horizonta_bg">#F5F5F5</color>
+    <color name="color_off_white">#B6B6B6</color>
+
+    <color name="libon_blue">#002060</color>
+    <color name="color_yellow">#F4C305</color>
+    <color name="light_yellow">#A16A2A</color>
+    <color name="green">#00AC5B</color>
+    <color name="create_profile_text">#919191</color>
+    <color name="menu_line_color">#8c000000</color>
+    <color name="color_38A4DB">#38A4DB</color>
+    <color name="color_green">#32CD32</color>
+    <color name="primaryText">#212121</color>
+    <color name="grey_temp">#ACACAC</color>
+
+    <color name="background">#eeeeee</color>
+    <color name="splash_background">#99002060</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">@color/color1</color>
+    <color name="bg_screen2">@color/color2</color>
+    <color name="bg_screen3">@color/color3</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#c96d00</color>
+    <color name="dot_dark_screen2">#2278d4</color>
+    <color name="dot_dark_screen3">#14a895</color>
+
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f9ad52</color>
+    <color name="dot_light_screen2">#93c6fd</color>
+    <color name="dot_light_screen3">#8cf9eb</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
+
+    <color name="bottom_select">#A5302A</color>
+    <color name="bottom_unselect">#ffffff</color>
+
+    <color name="facebook">#3D5A99</color>
+    <color name="google">#DF4A32</color>
+    <color name="btnBackground">#042666</color>
+    <color name="appBarBackground">#041638</color>
+</resources>

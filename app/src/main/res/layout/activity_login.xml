@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_96dp"
+            android:layout_height="@dimen/dimen_96dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:src="@drawable/resfeber_logo" />
+
+        <com.travel.resfeber.custom.TfTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dimen_4dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorCloud"
+            android:textSize="@dimen/sp26"
+            app:ftype="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/edt_border"
+                android:minHeight="@dimen/dimen_48dp">
+
+                <com.travel.resfeber.custom.TfEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:background="@color/colorBlack"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:fEdittype="regular" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/edt_border"
+                android:minHeight="@dimen/dimen_48dp">
+
+                <com.travel.resfeber.custom.TfEditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_2dp"
+                    android:background="@color/colorBlack"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:textSize="@dimen/sp16"
+                    app:fEdittype="regular" />
+
+            </LinearLayout>
+
+            <com.travel.resfeber.custom.TfButton
+                android:id="@+id/btnSignIn"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="@dimen/dimen_120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:background="@drawable/button"
+                android:text="@string/sign_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <com.travel.resfeber.custom.TfTextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:padding="@dimen/dimen_6dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/colorCloud"
+            android:textSize="@dimen/sp16"
+            app:ftype="regular" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_10dp">
+
+            <LinearLayout
+                android:id="@+id/llSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_2dp"
+                    android:text="@string/don_t_have_an_account"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="regular" />
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:padding="@dimen/dimen_2dp"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/colorCloud"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

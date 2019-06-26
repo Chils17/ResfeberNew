@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/partial_left_drawer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="@string/home"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/menu_line_color" />
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtVehicleBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="@string/vehicle_booking"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/menu_line_color" />
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtEventBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="@string/event_booking"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/menu_line_color" />
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtViewOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="@string/view_order"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/menu_line_color" />
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="@string/feedback"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/menu_line_color" />
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtContactUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="@string/contact_us"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="medium" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/menu_line_color" />
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="@string/help"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="medium" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/menu_line_color" />
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtLogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:gravity="center|left"
+                    android:padding="@dimen/dimen_4dp"
+                    android:text="LogOut"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="medium" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

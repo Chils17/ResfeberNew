@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TtEditTextSimple">
+        <attr name="isBoldEditText" format="boolean" />
+        <attr name="fEdittype">
+            <enum name="regular" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="semibold" value="3" />
+            <enum name="bold" value="4" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TfTextView">
+        <attr name="isBold" format="boolean" />
+        <attr name="ftype">
+            <enum name="regular" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="semibold" value="3" />
+            <enum name="bold" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SearchableSpinner">
+        <attr name="hintText" format="string"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="MnDropDown">
+        <attr name="ddmTabTextSize" format="dimension"/>
+        <attr name="ddmTabTextColorNormal" format="color"/>
+        <attr name="ddmTabTextColorSelected" format="color"/>
+        <attr name="ddmTabIconNormal" format="reference"/>
+        <attr name="ddmTabIconSelected" format="reference"/>
+        <attr name="ddmBorderColor" format="color"/>
+        <attr name="ddmDividerColor" format="color"/>
+        <attr name="ddmDividerPadding" format="dimension"/>
+    </declare-styleable>
+
+
+</resources>

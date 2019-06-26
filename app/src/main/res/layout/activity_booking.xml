@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.BookingActivity">
+
+    <include layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_196dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@drawable/edt_border"
+                    android:minHeight="@dimen/dimen_48dp"
+                    android:orientation="vertical">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteSource"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLines="1"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:background="@color/colorBlack"
+                        android:hint="@string/select_source"
+                        android:minHeight="@dimen/dimen_48dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@drawable/edt_border"
+                    android:minHeight="@dimen/dimen_48dp"
+                    android:orientation="vertical">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteDestination"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:maxLines="1"
+                        android:background="@color/colorBlack"
+                        android:hint="@string/select_destination"
+                        android:minHeight="@dimen/dimen_48dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+
+                <!--<AutoCompleteTextView
+                    android:id="@+id/autoCompleteSource"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:hint="@string/select_source"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteDestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:hint="@string/select_destination"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/sp16" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+
+                    <com.travel.resfeber.custom.TfTextView
+                        android:id="@+id/txtStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_6dp"
+                        android:text="@string/start_date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16"
+                        app:ftype="regular" />
+
+                    <com.travel.resfeber.custom.TfTextView
+                        android:id="@+id/txtEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_6dp"
+                        android:text="@string/end_date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16"
+                        app:ftype="regular" />
+
+                </LinearLayout>
+
+                <com.travel.resfeber.custom.TfTextView
+                    android:id="@+id/txtPickUpTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_6dp"
+                    android:text="@string/pick_up_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:ftype="regular" />
+
+                <RadioGroup
+                    android:id="@+id/rgTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_4dp">
+
+                    <RadioButton
+                        android:id="@+id/radioSingleTrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Single Trip"
+                        android:textSize="@dimen/sp16" />
+
+                    <RadioButton
+                        android:id="@+id/radioRoundTrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Round Trip"
+                        android:textSize="@dimen/sp16" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/llEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@drawable/edt_border"
+                    android:minHeight="@dimen/dimen_48dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!--<Spinner
+                        android:id="@+id/spinEvent"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:minHeight="@dimen/dimen_48dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/sp16"></Spinner>-->
+
+                    <Spinner
+                        android:id="@+id/spinEvent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:minHeight="@dimen/dimen_48dp"
+                        android:spinnerMode="dropdown" />
+
+
+                </LinearLayout>
+
+                <com.travel.resfeber.custom.TfButton
+                    android:id="@+id/btnSubmit"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="@dimen/dimen_120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:background="@drawable/button"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
